@@ -42,7 +42,7 @@
     </div>
     
 		   <!--ПОИСК-->
-    <div id = "search">
+    <div class = "search">
 		  <form action="#" method="post">
 		      <input  type="text" name ="search" placeholder="Поиск "/>
 		 </form>
@@ -65,20 +65,24 @@
     
 <div class = "content-bg">  
                                 <h2>Вход в личный кабинет</h2>
-             <form class="form-horizontal">
-                    <label class="control-label" for="inputName">Введите Ник (имя) </label>
-                    <div class="controls">
-                    <input type="text" id="inputName" placeholder="Name">   
-                    </div>     
-                            <label class="control-label" for="inputPassword">Введите пароль</label>
-                            <div class="controls">
-                            <input type="password" id="inputPassword" placeholder="Password">
-                            </div>
-            </form>
-     <div class="form-actions">
-              <button type="submit" class="btn btn-primary">Сохранить изменения</button>
-              <button type="button" class="btn">Отмена</button>
-     </div>
+          
+        <form class='send' method="post">
+  <div class = "fieldset">
+    <label>Логин</label>
+    <input type='text' name='log' placeholder='Логин' required><span></span>
+    <br>               
+ 
+    <label>Пароль</label>
+    <input type='password' name='pass' placeholder='Пароль' required><span></span>
+    <br>
+   </div>
+
+</form>
+<div class="sum">
+  <input type="submit" value="Войти" form='send'>
+  <input type="submit" value="Отмена" form='send'>
+</div>
+
 </div>   
      
 <div class = "footer">

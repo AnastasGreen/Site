@@ -1,32 +1,38 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!-->
 <html lang = ru>
+    <!--<![endif]-->
 <head>
-<meta charset= utf-8 / >
-<title> Создание сайта </title>
-<meta name="description" content="" />
+ <meta charset= utf-8 / >
+<title> Создание анкеты </title>
+    <meta name="description" content="" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
-      
-	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
-    <link rel="stylesheet" href="css/fonts.css" /> <!--шрифты -->    
+    
+    <link rel="stylesheet" href="css/fonts.css" />         
 
     <link rel="stylesheet" href="css/style.css" /> 
 
-    <link rel ="stylesheet" href="css/bootstrap.min.css" >
+    <link rel ="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" >
+    
+    <link rel="stylesheet" href="libs/bootstrap/bootstrap.css">
  
 </head>
 
 <body>
 
 <!--Шапка--> 
-<div id = "header"> 
-      <div id  = "menu">
+<div class = "header"> 
+      <div class  = "menu">
       
 	     <ul>
 
-				   <li><a href="index.html"> Главная </a></li>
+				   <li><a href="index.html"> Главная</a> </li>
 				   <li><a href="topic.html"> Темы </a></li>
-				   <li><a href="info.html"> О нас </a></li>
+                   <li><a href="info.html"> О нас</a> </li>
 				 
 		
          </ul>
@@ -36,95 +42,101 @@
     </div>
     
 		   <!--ПОИСК-->
-    <div id = "search">
+    <div class = "search">
 		  <form action="#" method="post">
-		      <input  type="text" name ="search" placeholder="Поиск ">
-		<button type="submit"></button> 
-		  </form>
+		      <input  type="text" name ="search" placeholder="Поиск "/>
+		 </form>
+              <a href="search.html" ><img src="images/search.png" ></a> 
+		 
     </div>
     
     <!--регистрация-->
-<div id = "reg">
+<div class = "reg">
 		  <form action = "#" method = "form-inline">
-              <button type="submit" class="btn" onClick='location.href="lk.html"'>Войти</button>
-	     <button type="submit" class="btn" onClick='location.href="checkin.html"'>Зарегистрироваться</button>
+<!--              <button type="button" class="btn btn-defaut">Войти</button>-->
+              <a href="entrance.html" class="button">Войти</a>
+              <a>/</a>
+              <a href="checkin.html" class="button">Зарегистрироваться</a>
 	     
         </form>
     </div>
     
  </div>
 
-    <div class = "content-bg">
-    
-<article>
    
-   <div class="control-group">
-       
-    <label class="control-label" for="inputNameq">Введите название анкеты:</label>
-    <div class="controls">
-      <input type="text" id="inputNameq" >
+    
+
+  <div class = "content-bg">
+      
+     <h2> Новая анкета </h2>
+ <div class = "scroll"><pre>
+<form name="test" method="post">
+<!--           <div class="control-group">-->
+    <b>Ваш вопрос:</b><input type="text" size="40">
+    <br>
+    <b>Выберите тему:</b><select>
+    <option>1 тема </option>
+    <option>2 тема</option>
+    <option>3 тема</option>
+    <option>4 тема</option>
+    <option>5 тема</option>
+    </select><br>
+    <b>Введите вопрос:</b><div class="controls"><input type="text" id="inputNameq" >
+    </div><br>
+    <b>Пропишите ответы на вопрос:( Выбираем одно или другое (два сразу нельзя)</b><div class="controls"><input type="text" id="inputNameq" ></div>
+    <label class="radio">
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>вариант1
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>вариант2
+    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>вариант3 
+    </label><br>
+    <!--           Вопрос -->
+    <b>Вопрос:</b> <div class="controls"><input type="text" id="inputNameq" ></div>               
+    <label class="radio">
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">1
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">2
+    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">3
+    </label>
+    <!--    вопрос-->
+    <b>Вопрос:(тип галочки ставить, можно все выбрать)</b><div class="controls"><input type="text" id="inputNameq" ></div>
+    <label class="checkbox inline">
+    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+    </label>
+    <label class="checkbox inline">
+    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+    </label>
+    <label class="checkbox inline">
+    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+    </label> <br>
+
+    <b>Ваше имя:</b><input type="text" size="40">
+
+    <b>Каким браузером в основном пользуетесь:</b><br>
+    <input type="radio" name="browser" value="ie"> var1<br>
+    <input type="radio" name="browser" value="opera"> var2<br>
+    <input type="radio" name="browser" value="firefox"> var3<br>
+   
+    <b>Комментарий:</b>
+    <textarea name="comment" cols="40" rows="3"></textarea>
+    <br>
+    <p><b>вопрос</b>
+    <input type="radio" name="answer" value="a1">var1<br>
+    <input type="radio" name="answer" value="a2">var2<br>
+    <input type="radio" name="answer" value="a3">var3</p>  
+
+</form> </pre></div> 
+    <div class="sum">
+      <input type="submit" value="Сохранить изменения" form='send'>
+      <input type="submit" value="Отмена" form='send'>
+    </div>       
     </div>
-       
-     <label class="control-label" for="inputNameq">Выберите тему:</label>
-    <div class="select">
-      <select>
-  <option>1 тема </option>
-  <option>2 тема</option>
-  <option>3 тема</option>
-  <option>4 тема</option>
-  <option>5 тема</option>
-</select>
-    </div> 
-       
-        <label class="control-label" for="inputNameq">Введите вопрос:</label>
-    <div class="controls">
-      <input type="text" id="inputNameq" >
-    </div>
-        <label class="control-label" for="inputNameq">Пропишите ответы на вопрос: </label> <!--Выбираем одно или другое (два сразу нельзя) -->
-       <label class="radio">
-  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-    <div class="controls">
-      <input type="text" id="inputNameq" >
-    </div> Вопрос 
-</label>
-<label class="radio">
-  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
-  <div class="controls">
-      <input type="text" id="inputNameq" >
-    </div> вопрос
-</label>
-       
-       <!-- тип галочки ставить, можно все выбрать--> 
-<label class="checkbox inline">
-  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-</label>
-<label class="checkbox inline">
-  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-</label>
-<label class="checkbox inline">
-  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-</label>
-       
-  </div>
     
-    
-    
-    
-    <div class="form-actions">
-  <button type="submit" class="btn btn-primary">Сохранить изменения</button>
-  <button type="button" class="btn">Отмена</button>
-</div>
-    </article>    
-     
-    </div>
-        
- <div id = "foot">
-<footer>
-<p> Подвал info</p>
-    <p>Разработчики этого проекта</p>
-</footer>
+<div class = "footer">
+<footer> Разработчики этого проекта </footer>
 </div>
 
  
 </body>
 </html> 
+
+
+  

@@ -42,7 +42,7 @@
     </div>
     
 		   <!--ПОИСК-->
-    <div id = "search">
+    <div class = "search">
 		  <form action="#" method="post">
 		      <input  type="text" name ="search" placeholder="Поиск "/>
 		 </form>
@@ -64,42 +64,39 @@
  </div>
 
     <div class = "content-bg">
+        
         <h2>Регистрация пользователя</h2>
-            <form class="form-horizontal">
-            <div class="control-group">
-            <label class="control-label" for="inputName">Введите Ник (имя) </label>
-            <div class="controls">
-            <input type="text" id="inputName" placeholder="Name">   
-            </div>     
-                <label class="control-label" for="inputEmail">Введите Email</label>
-                <div class="controls">
-                <input type="text" id="inputEmail" placeholder="Email">
-                </div>
-                    <label class="control-label" for="inputPassword">Введите пароль</label>
-                    <div class="controls">
-                    <input type="password" id="inputPassword" placeholder="Password">
-                    </div>
-                            <label class="control-label" for="inputPassword">Введите повторно пароль</label>
-                            <div class="controls">
-                            <input type="password" id="inputPassword" placeholder="Password">
-                            </div>
+        <form class='send' method="post">
+  <div class = "fieldset">
+    <label>Имя</label>
+    <input type='text' name='name' placeholder='Имя' required><span></span>
+    <br>
+    <label>Фамилия</label>
+    <input type='text' name='surname' placeholder='Фамилия' required><span></span>
+    <br>
+    <label>Логин</label>
+    <input type='text' name='log' placeholder='Логин' required><span></span>
+    <br>               
+  </div>
+  <div class = 'fieldset'>
+    <label>Эл. почта</label>
+    <input type='email' name='email' placeholder='Эл. почта' required><span></span>
+    <br>
+    <label>Пароль</label>
+    <input type='password' name='pass' placeholder='Пароль' required><span></span>
+    <br>
+    <label>Повторите</label>
+    <input type='password' name='repeat' placeholder='Повторите' required><span></span>
+    <br>
   </div>
 </form>
-
-    
-        <!--кнопки-->
-        <div class="form-actions">
-              <button type="submit" class="btn btn-primary">Сохранить изменения</button>
-              <button type="button" class="btn">Отмена</button>
-        </div>
-
+<div class="sum">
+  <input type="submit" value="Зарегистрироваться" form='send'>
+  <input type="submit" value="Отмена" form='send'>
+  <input type="reset" value="Очистить">
+</div>
    </div>   
         
-        
-        
-    
- 
-    
     
     
  <div class = "footer">
