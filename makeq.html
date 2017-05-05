@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang = ru>
+<head>
+<meta charset= utf-8 / >
+<title> Создание сайта </title>
+<meta name="description" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
+      
+	<link rel="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" />
+    <link rel="stylesheet" href="css/fonts.css" /> <!--шрифты -->    
+
+    <link rel="stylesheet" href="css/style.css" /> 
+
+    <link rel ="stylesheet" href="css/bootstrap.min.css" >
+ 
+</head>
+
+<body>
+
+<!--Шапка--> 
+<div id = "header"> 
+      <div id  = "menu">
+      
+	     <ul>
+
+				   <li><a href="index.html"> Главная </a></li>
+				   <li><a href="topic.html"> Темы </a></li>
+				   <li><a href="info.html"> О нас </a></li>
+				 
+		
+         </ul>
+	      
+ 
+    
+    </div>
+    
+		   <!--ПОИСК-->
+    <div id = "search">
+		  <form action="#" method="post">
+		      <input  type="text" name ="search" placeholder="Поиск ">
+		<button type="submit"></button> 
+		  </form>
+    </div>
+    
+    <!--регистрация-->
+<div id = "reg">
+		  <form action = "#" method = "form-inline">
+              <button type="submit" class="btn" onClick='location.href="lk.html"'>Войти</button>
+	     <button type="submit" class="btn" onClick='location.href="checkin.html"'>Зарегистрироваться</button>
+	     
+        </form>
+    </div>
+    
+ </div>
+
+    <div class = "content-bg">
+    
+<article>
+   
+   <div class="control-group">
+       
+    <label class="control-label" for="inputNameq">Введите название анкеты:</label>
+    <div class="controls">
+      <input type="text" id="inputNameq" >
+    </div>
+       
+     <label class="control-label" for="inputNameq">Выберите тему:</label>
+    <div class="select">
+      <select>
+  <option>1 тема </option>
+  <option>2 тема</option>
+  <option>3 тема</option>
+  <option>4 тема</option>
+  <option>5 тема</option>
+</select>
+    </div> 
+       
+        <label class="control-label" for="inputNameq">Введите вопрос:</label>
+    <div class="controls">
+      <input type="text" id="inputNameq" >
+    </div>
+        <label class="control-label" for="inputNameq">Пропишите ответы на вопрос: </label> <!--Выбираем одно или другое (два сразу нельзя) -->
+       <label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+    <div class="controls">
+      <input type="text" id="inputNameq" >
+    </div> Вопрос 
+</label>
+<label class="radio">
+  <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+  <div class="controls">
+      <input type="text" id="inputNameq" >
+    </div> вопрос
+</label>
+       
+       <!-- тип галочки ставить, можно все выбрать--> 
+<label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
+</label>
+<label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
+</label>
+<label class="checkbox inline">
+  <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
+</label>
+       
+  </div>
+    
+    
+    
+    
+    <div class="form-actions">
+  <button type="submit" class="btn btn-primary">Сохранить изменения</button>
+  <button type="button" class="btn">Отмена</button>
+</div>
+    </article>    
+     
+    </div>
+        
+ <div id = "foot">
+<footer>
+<p> Подвал info</p>
+    <p>Разработчики этого проекта</p>
+</footer>
+</div>
+
+ 
+</body>
+</html> 
