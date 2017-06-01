@@ -1,10 +1,7 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]><html lang="ru" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
-<!--[if IE 7]><html lang="ru" class="lt-ie9 lt-ie8"><![endif]-->
-<!--[if IE 8]><html lang="ru" class="lt-ie9"><![endif]-->
-<!--[if gt IE 8]><!-->
+
 <html lang = ru>
-    <!--<![endif]-->
+  
 <head>
  <meta charset= utf-8 / >
 <title> Создание анкеты </title>
@@ -13,7 +10,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />   
     
     <link rel="stylesheet" href="css/fonts.css" />         
-
     <link rel="stylesheet" href="css/style.css" /> 
 
     <link rel ="stylesheet" href="libs/bootstrap/bootstrap-grid-3.3.1.min.css" >
@@ -27,18 +23,13 @@
 <!--Шапка--> 
 <div class = "header"> 
       <div class  = "menu">
-      
+       <a href="index.html" >
+          <img src="images/logo.png" ></a>
 	     <ul>
-
 				   <li><a href="index.html"> Главная</a> </li>
 				   <li><a href="topic.html"> Темы </a></li>
-                   <li><a href="info.html"> О нас</a> </li>
-				 
-		
+                   <li><a href="info.html"> Информация о сайте</a> </li>
          </ul>
-	      
- 
-    
     </div>
     
 		   <!--ПОИСК-->
@@ -53,77 +44,61 @@
     <!--регистрация-->
 <div class = "reg">
 		  <form action = "#" method = "form-inline">
-<!--              <button type="button" class="btn btn-defaut">Войти</button>-->
+
               <a href="entrance.html" class="button">Войти</a>
               <a>/</a>
               <a href="checkin.html" class="button">Зарегистрироваться</a>
 	     
         </form>
     </div>
-    
  </div>
 
-   
-    
 
   <div class = "content-bg">
-      
-     <h2> Новая анкета </h2>
- <div class = "scroll"><pre>
-<form name="test" method="post">
-<!--           <div class="control-group">-->
-    <b>Ваш вопрос:</b><input type="text" size="40">
+        <div class = "article">
+     <p><strong>Новая анкета</strong></p> 
+      </div>
+
+    <div class="main">
+        <form name="test" method="post">
+        
+    <b>Введите название анкеты:</b> 
+    <input type="text" size="40">
     <br>
-    <b>Выберите тему:</b><select>
+        
+    <b>Выберите тему анкеты :</b> 
+    <select>
     <option>1 тема </option>
     <option>2 тема</option>
     <option>3 тема</option>
     <option>4 тема</option>
     <option>5 тема</option>
-    </select><br>
-    <b>Введите вопрос:</b><div class="controls"><input type="text" id="inputNameq" >
-    </div><br>
-    <b>Пропишите ответы на вопрос:( Выбираем одно или другое (два сразу нельзя)</b><div class="controls"><input type="text" id="inputNameq" ></div>
-    <label class="radio">
-    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>вариант1
-    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>вариант2
-    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>вариант3 
-    </label><br>
-    <!--           Вопрос -->
-    <b>Вопрос:</b> <div class="controls"><input type="text" id="inputNameq" ></div>               
-    <label class="radio">
-    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">1
-    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">2
-    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">3
-    </label>
-    <!--    вопрос-->
-    <b>Вопрос:(тип галочки ставить, можно все выбрать)</b><div class="controls"><input type="text" id="inputNameq" ></div>
-    <label class="checkbox inline">
-    <input type="checkbox" id="inlineCheckbox1" value="option1"> 1
-    </label>
-    <label class="checkbox inline">
-    <input type="checkbox" id="inlineCheckbox2" value="option2"> 2
-    </label>
-    <label class="checkbox inline">
-    <input type="checkbox" id="inlineCheckbox3" value="option3"> 3
-    </label> <br>
+    </select>
+    <br>
+        
+    <b>Создать новую тему:</b>
+    <input type="text" size="40">
+    <br>
+    
+    <b>Название вопроса:</b>
+   <input type="text" size="40">  
+   <button class="mobile-button"><img src="images/plus.png"width="25px"></button>   
+   <button class="mobile-button"><img src="http://www.clker.com/cliparts/U/8/Q/Y/l/0/remove-md.png" width="25px"></button>
+    <br>
 
-    <b>Ваше имя:</b><input type="text" size="40">
-
-    <b>Каким браузером в основном пользуетесь:</b><br>
-    <input type="radio" name="browser" value="ie"> var1<br>
-    <input type="radio" name="browser" value="opera"> var2<br>
-    <input type="radio" name="browser" value="firefox"> var3<br>
-   
-    <b>Комментарий:</b>
+    <b>Пропишите ответы на вопрос:(можно выбрать один вариант ответа)</b>
+    <br>
+    <input type="radio"><input type="text" size="40"><br>
+    <input type="radio"><input type="text" size="40"><br>
+    <input type="radio"><input type="text" size="40"><button class="mobile-button"><img src="images/plus.png" width="25px"></button>   
+   <button class="mobile-button"><img src="http://www.clker.com/cliparts/U/8/Q/Y/l/0/remove-md.png" width="25px"></button> <br>   
+  
+    <b>Комментарий:</b> <br>
     <textarea name="comment" cols="40" rows="3"></textarea>
     <br>
-    <p><b>вопрос</b>
-    <input type="radio" name="answer" value="a1">var1<br>
-    <input type="radio" name="answer" value="a2">var2<br>
-    <input type="radio" name="answer" value="a3">var3</p>  
+  </form> 
+        </div>
 
-</form> </pre></div> 
     <div class="sum">
       <input type="submit" value="Сохранить изменения" form='send'>
       <input type="submit" value="Отмена" form='send'>
@@ -131,7 +106,7 @@
     </div>
     
 <div class = "footer">
-<footer> Разработчики этого проекта </footer>
+<footer> Разработчики этого проекта: Кирилин Павел, Гордеев Павел, Посоха Кирилл, Жилина Анастасия </footer>
 </div>
 
  

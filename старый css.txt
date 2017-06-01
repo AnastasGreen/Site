@@ -2,85 +2,91 @@
 
 
 *{
-    
     height: auto;
-    margin: 0;
     padding: 0;
+    margin: 0;
     outline: none;
-    text-decoration: none;
-    list-style: none;
+    
 }
 
-html, body {
+
+body {
+    
+/*    position: inherit;*/
 /*    width: 100%;*/
-    height: 100%;
+/*    height: 100%;*/
     font-size: 108%;
-    line-height: 187%;
+/*    line-height: 187%;*/
     background-image: url(../images/bg.png);
-/*    background-size: cover; */
+    background-size: cover; 
 }
 
 .header  {
-   
-    height: 25%;
-    position: relative; 
+    position: relative;
+/*    height: 25%; */
+/*    width: 100%;*/
    }
 
-.menu{ 
+.menu{  
+    
     position: absolute;
-    width: 1150px;
-    height: 80px;
-    background:   url(../images/head.png);
-    border-radius:30px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);
-    padding: 1.7% 1.9% 1.1% 2.5%;
-    margin-top: 5%;
-    margin-left: 4%;
-}
-.menu img { /*РєР°СЂС‚РёРЅРєР° СЃ Р»РѕРіРѕ*/
-    position: absolute;
-    border-radius: 30px 0px 0px 30px ;
-    top: 0%;
-    left: 0%;
-    width: 245px;
+    width: 90%;
+    height: 68px;
+    background: url(../images/logo.png)no-repeat, url(../images/head.png);
+    border-radius: 30px;
+/*    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);*/
+/*    padding: 1.7% 1.9% 1.1% 2.5%;*/
+    margin-top: 3.3%;
+    margin-left: 3.2% ;
 }
 
 .menu ul{
-    float:left;
-    margin-left: 20% ;
-/* СЂР°СЃРїРѕР»РѕР¶РµРЅРёРµ РіР»Р°РІРЅРѕР№ С‚РµРј Рё Рѕ РЅР°СЃ ; 
-    */
+/*    position: relative;*/
+    margin-left: 25%;
+    
+/*    padding: 2% 5% 2% 5%;*/
 
+/*    padding: 15px 8px 15px 8px;*/
+/*        расположение главной тем и о нас ;    */
 }
 
-.header .menu ul li{
+    
+.menu ul li{
+/*     position: absolute;    */
     display: inline-block; 
-    padding: 0% 2% 0% 2%;
+    padding: 15px 16px 15px 16px;
+    
+    
 }
 
-.header .menu ul li a{ 
-
+.menu ul li a{ /*сделать растягивание (когда окно становится меньше - шапка плывет*/
+    
+/*    position: absolute;*/
     font-weight: bold;
+    
     font-size: 180%;
     color: darkred;
-    text-shadow: 0 2% 0 #fffbfb;
     cursor: pointer;
 
 }
+ 
 
-.menu ul li a:hover{       /*РІС‹РґРµР»РµРЅРёРµ Р·Р°РіРѕР»РѕРІРєРѕРІ*/
-
+.menu ul li a:hover{     /*  выделение заголовков*/
+    font-weight: bold;
     background: rgba(245, 203, 125, 0.65);
+    padding: 1% 6% 1% 6%;
     border-radius: 11px;
-    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4);  
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.4); 
+    
 }
 
-
-.menu ul li.active {  /*РІС‹РґРµР»РµРЅРёРµ - РЅР° РєР°РєРѕР№ РІРєР»Р°РґРєРµ*/
+.menu ul li.active {  /*выделение - на какой вкладке*/
     
     font-weight: bold;
-    padding: 1% 2% 1% 2%;
-    background: rgba(245, 203, 125, 0.65);
+    padding: 1.5% 4% 1.5% 4%;
+    margin-top: -2.34%;
+    background: rgba(253, 185, 57, 0.89); 
+/*    выделение в шапке где нахожусь */
     color: darkred;
     border-radius: 11px;
     text-decoration: none;
@@ -89,36 +95,43 @@ html, body {
     text-shadow: 0 2% 0 #fffbfb;
     cursor: pointer; 
 }
-
- .header .search {
+/*поиск*/
+.search {
     float:right;
     position: relative;
     margin-right: 9%;
-    margin-top: 6%;
+    margin-top:  4%;/*сдвиг поля по у + поле*/
 }
 
-  .search img { /*РєР°СЂС‚РёРЅРєР° СЃ Р»СѓРїРѕР№*/
+img { /*картинка с лупой*/
     position: absolute;
     left: 80%;
-    top: 22%;
+    top: 20%
 }
+
      
 .search form input{
  
     padding: 4px 32px 4px 15px;
-    width: 170px; /*РґР»РёРЅР° РїРѕР»СЏ РІРІРѕРґР°*/
+    width: 170px; /*длина поля ввода
+/*  margin-left: 0%; сдвиг поля влево
+/*    margin-right: 30%; */
+    height: 30px;/*ширина поля для текта*/
+    background: rgba(250, 250, 250, 0.99);
     border-radius: 5px;
+    border: 0;
+    outline: 0;
     color: darkred;
-    font-weight: 600;/*Р¶РёСЂРЅС‹Р№ С‚РµРєСЃС‚*/
+    font-weight: 600;/*жирный текст*/
+    font-style:normal;
     box-shadow: 1px 1px 0px #712407, 0px 0px 8px rgba(0, 0, 0, 0.41) inset;  
 }
+/* Поле войти и резистрироваться */
 
-
-.header .reg form {
+.reg form {
     position: relative;
     float:left;
-    top: 30px;
-    left: 50px;
+    padding: 1% 5% 1% 5%; 
 }
 
 .reg form a {
@@ -126,38 +139,58 @@ html, body {
 }
 
 .button{
-    color: white;
+ color: white;
 }
+
 
 .content-bg{
- overflow-y:auto;
+
+/* overflow: ;*/
+/* position: relative;*/
  width: 65%;
  height: 100%;
- margin: 1% 1% 1% 18%; /* Р’С‹СЂР°РІРЅРёРІР°РЅРёРµ РїРѕ С†РµРЅС‚СЂСѓ */
- background: rgba(198, 101, 3, 0.67);
+ margin: 2% 1% 0% 18%; /* Выравнивание по центру */
+ background: rgb(198, 101, 3);
 }
 
-.content-bg .article p strong { /*Р·Р°РіРѕР»РѕРІРєРё РІ С‚РµРєСЃС‚Рµ */  
+.article p strong { /*заголовки в тексте */  
     color: #fff;
     font-weight: 600;
-    font-size: 250%;
+    font-size: 300%;
     text-shadow: 3px 1px 1px rgb(36, 0, 0);
-    margin-left: 35%;
-   
+    margin-left: 30% ;
 }
 
-.content-bg .article li a {
-    margin-left: 35%;
-    color: darkred;
-    font-weight: 600;/*Р¶РёСЂРЅС‹Р№ С‚РµРєСЃС‚*/
-    font-size: 200%; 
-    text-decoration: none;
-       
+
+.article  h3{
+      color: aliceblue;
+      font-size: 300%;
+      font-weight: 650;
+      padding: 0% 20% 7% 15%;  
 }
+
+.article li{
+    list-style-type: none; /* Убираем маркеры */
+    
+}
+
+.article li a {
+    color: darkred;
+    word-spacing: 50%;
+    font-weight: 600;/*жирный текст*/
+    margin-left: 20%;
+    text-decoration:underline;
+    font-size: 200%;  
+}
+
+.article p {
+    color: #fa8700;
+    font-size: 80%;
+} 
 
 .article  li a:hover{
     color: #ffffff;
-    text-decoration: none;
+    text-decoration: none
 }
 
  .scroll pre {
@@ -182,21 +215,21 @@ pre {
 }
 
  table {
-    width: 100%; /* РЁРёСЂРёРЅР° С‚Р°Р±Р»РёС†С‹ */
+    width: 100%; /* Ширина таблицы */
     height: 90%;
     border-color: #ffffff;
      
    }
 
 th {
-    background: #825a00; /* Р¦РІРµС‚ С„РѕРЅР° */
-    color: #fffff0; /* Р¦РІРµС‚ С‚РµРєСЃС‚Р° */
+    background: #825a00; /* Цвет фона */
+    color: #fffff0; /* Цвет текста */
     height: 10%;
     width: 50%;
    }
 
 td,th {
-    padding: 4px; /* РџРѕР»СЏ РІРѕРєСЂСѓРі СЃРѕРґРµСЂР¶РёРјРѕРіРѕ СЏС‡РµРµРє */
+    padding: 4px; /* Поля вокруг содержимого ячеек */
    }
 
 .footer footer{
@@ -225,6 +258,10 @@ input {
 }
 
 
+form img {
+
+  vertical-align: middle;
+}
 .send{
     border: none;
     padding: 1% 1% 1% 25%;      
@@ -246,16 +283,8 @@ form input {
   border: 1px solid #C1C1C1;
   padding: 3px 5px;
   margin: 7px;
-/*  font-weight: bolder;*/
+  font-weight: bolder;
 }
-.mobile-button {
-  border: medium none;
-  background-image: none; 
-  background: transparent;
-/*  float: left;*/
-  background-color: transparent;
-}
-
 
 form input:valid + span {
   content: url(http://htmlbook.ru/example/images/ok.png);
@@ -268,8 +297,8 @@ form input:invalid + span {
   margin-left: -3px;
 }
 .sum {
-  float: left;
-  margin-bottom: 5%;
+  
+  margin-top: 5%;
   margin-left: 3%;
 
 }
@@ -283,28 +312,6 @@ form input:invalid + span {
 textarea {
     max-width: 700px;
     max-height: 200px;
-}
-
-.btn-group {
-    position: absolute;
-    display: none;
-    top: 10px;
-    left: 660px;        
-    position: relative;
-    display: inline-block;
-}
-
-.main{
-    margin: 5% 5%;
-}
-
-.btn-group  img{
-    width: 40px;
-    border-radius: 30px;
-}
-
-.btn-group  a {
-   color:  aliceblue;
 }
 
 
